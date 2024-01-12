@@ -32,7 +32,7 @@ const AuthContextProvider = ({ children }) => {
 		if (!!!tokenMethod.get()) {
 			setShowModal(modalType || "");
 		}
-		if(modalType==MODAL_TYPES.pass && !!tokenMethod.get()){
+		if (modalType == MODAL_TYPES.pass && !!tokenMethod.get()) {
 			setShowModal(modalType || "");
 		}
 	};
@@ -185,4 +185,5 @@ const AuthContextProvider = ({ children }) => {
 
 export default AuthContextProvider
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuthContext = () => useContext(AuthContext);

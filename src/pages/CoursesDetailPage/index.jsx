@@ -53,7 +53,7 @@ const CoursesDetailPage = () => {
 			orderLink,
 			tagsJoin: tags?.map((tag) => (tag)).join(' | ')
 		}
-	), [courseDetailData, teams, startDate, price, tagsJoin, orderLink, Roles])
+	), [courseDetailData, teams, startDate, price, orderLink, Roles])
 
 	const apiLoading = courseDetailLoading || questionLoading || courseLoading;
 
